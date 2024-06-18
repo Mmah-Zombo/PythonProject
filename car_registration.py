@@ -1,10 +1,30 @@
-# Get the weight and year from the user
-weight = int(input("Enter the automobile's weight: "))
-year = int(input("Enter the automobile's model year: "))
+# Initialize the weight and year variables
+weight = 0.0
+year = 0.0
+
+# Get the automobile weight from the user
+weight_input = input("Enter the automobile's weight: ")
+
+try:
+    weight = int(weight_input)
+except Exception:
+    print("Please enter a valid number for the automobile's weight.")
+    exit()
+
+# Get the automobile's model year from the user
+year_input = input("Enter the automobile's model year: ")
+
+try:
+    year = int(year_input)
+except Exception:
+    print("Please enter a valid number for the automobile's model year.")
+    exit()
 
 # Set the initial value of the weight class and registration fees
 weight_class = 0.0
 registration_fees = 0.0
+
+# Check for letter input
 
 # Check the automobile's model year value
 if year <= 1990:
